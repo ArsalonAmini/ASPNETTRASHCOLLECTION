@@ -27,6 +27,5 @@ namespace ASPNETWEBAPPLICATION.Models
 
 
 
-
     }
 }

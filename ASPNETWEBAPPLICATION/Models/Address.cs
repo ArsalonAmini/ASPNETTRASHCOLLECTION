@@ -12,8 +12,7 @@ namespace ASPNETWEBAPPLICATION.Models
         [Key]
 
         public int ID { get; set; }
-
-        [ForeignKey("Street")]
+        
 
         public int Street { get; set; }
 

@@ -54,6 +54,10 @@ namespace ASPNETWEBAPPLICATION.Models
             get; set;
         }
 
+        public DbSet<Worker> Worker
+        {
+            get; set;
+        }
 
     }
 }

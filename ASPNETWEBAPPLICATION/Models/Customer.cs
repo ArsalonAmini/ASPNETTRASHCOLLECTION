@@ -22,10 +22,6 @@ namespace ASPNETWEBAPPLICATION.Models
         public string Email { get; set; }
 
         
-        [ForeignKey("AddressCustomer")]
-        public int CustomerAddressID { get; set; }
-
-        public CustomerAddress CustomerAddress { get; set; }
 
 
     }
