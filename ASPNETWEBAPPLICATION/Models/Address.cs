@@ -12,10 +12,8 @@ namespace ASPNETWEBAPPLICATION.Models
         [Key]
 
         public int ID { get; set; }
-
-        [ForeignKey("Street")]
-
-        public int Street { get; set; }
+        public string TypeOfAddress { get; set; }
+        
 
         [ForeignKey("City")]
         public int CityID { get; set; }
@@ -26,5 +24,6 @@ namespace ASPNETWEBAPPLICATION.Models
         public int CountryID { get; set; }
 
         public Country Country { get; set; }
+        
     }
 }
