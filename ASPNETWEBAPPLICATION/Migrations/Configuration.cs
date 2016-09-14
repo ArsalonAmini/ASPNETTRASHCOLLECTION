@@ -1,3 +1,4 @@
+
 namespace ASPNETWEBAPPLICATION.Migrations
 {
     using System;
@@ -29,3 +30,4 @@ namespace ASPNETWEBAPPLICATION.Migrations
         }
     }
 }
+

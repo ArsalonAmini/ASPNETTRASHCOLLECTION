@@ -7,33 +7,55 @@
 
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
+
     @Html.AntiForgeryToken()
     <h4>Create a new account.</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
+
     <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
+        @Html.LabelFor(m => m.Email, new { @class = "col-lg-2 control-label" })
+        <div class="col-lg-10">
             @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
         </div>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-lg-2 control-label" })
+            <div class="col-lg-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-lg-2 control-label" })
+            <div class="col-lg-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
+            <br />
+            <div class="col-lg-offset-2 .col-lg-10">
+                <div class="dropdown">
+
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" p>
+                        Please Select Your Account Type
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+
+                        <li>PLACE HOLDER</li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <br />
+                <div class="form-group dropdown">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        <input type="submit" class="btn btn-default" value="Register" />
+                    </div>
+                </div>
+
 }
 
 @section Scripts {
